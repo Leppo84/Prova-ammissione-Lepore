@@ -1,85 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="italian">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio d'ammissione</title>
 
-  <title>Exercise 01</title>
-  <meta name="description" content="Questa pagina è uguale a alcune altre, ma è fatta da me">
-  <meta name="author" content="Francesco Lepore">
+    <!-- Image link -->
+    <!-- aggiunta favicon -->
 
-  <meta property="og:title" content="Exercise 01">
-  <meta property="og:type" content="website">
+    <link rel="icon" href="IMG\favico.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Saira&display=swap" rel="stylesheet">
 
-<!-- URL to be decided -->
+    <!-- Author: Francesco Lepore -->
 
-  <meta property="og:url" content="TBD">
-  <meta property="og:description" content="It is only a exercise.">
-  <meta property="og:image" content="Monopattini a go go">
+  </head>
 
-<!-- Image link -->
+  <!-- sfondo inserito direttamente nel body -->
+  <!-- immagine riquadrata in photoediting -->
 
-  <link rel="icon" href="IMG\favico.png">
-  <link rel="icon" href="IMG\favico.png" type="image/png">
+  <body background="img/backgroundMOD.jpg" class="sfondo">
 
-  <link rel="stylesheet" href="css/reset.css">
+    <!-- rettangolo nero in trasparenza con dentro un container-->
 
-  <link rel="stylesheet" href="css/style.css">
+    <div class="velina">
 
-</head>
+      <div class="container white">
 
-<body>
+        <!-- pate alta con logo e titolo centrati -->
 
-  <!-- wrapper... -->
-
-  <div class="wrapper">
-
-      <img class="background-img" src="IMG\background.jpg">
-
-        <!-- velina -->
-
-        <div class="velina">
-
-          <!-- logo -->
+        <div class="container_top">
 
           <img class="logo" src="IMG\logo.png" position="block">
+          <h2 class="section_title green">
+            Taking Booleaners from A to B
+          </h2>
 
-          <!-- titolo -->
+          <!-- menu pulsanti -->
 
-          <h1 style="color:green">
-          Taking Booleans from A to B
-          </h1>
-
-          <!-- menu -->
-
-<div color-background="verde"
-
-<ul-menu>
-  <li>"Prenota"</li>
-  <li>"Termina Prnotazione"</li>
-  <li>"Accendi Luci"</li>
-</ul>
-</div>
-
-
-          <!-- monopattino 1 -->
-
-
-
-          <!-- monopattino 2 -->
-
-
-
-          <!-- monopattino 3 -->
-
-        <!-- chiudo velina -->
-
+          <div class="menu">
+            <input type="button" name="Prenota" value="prenota">
+            <input type="button" name="termina" value="termina prenotazione">
+            <input type="button" name="luci" value="accendi luci">
+          </div>
         </div>
 
-  <!-- chiudo wrapper -->
+        <!-- elenco monopattini prenotabili -->
+        <!-- aggiunte barra grafica batterie piene -->
 
-  </div>
+        <!-- carta01 -->
+        <div class="carta_mezzo">
+          <h4><span>&#9632;</span>Monopattino MAVERICK</h4>
+          <div class="posizione">
+            <span>&#8594;</span>Via Attilio Regolo - 1,2 km da te
+          </div>
+          <div class="carica">
+            Stato carica:
+            <div class="full">
+              <div id="barra01">
+              </div>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <!-- carta02 -->
+        <div class="carta_mezzo">
+          <h4><span>&#9632;</span>Monopattino WEDGE</h4>
+          <div class="posizione">
+            <span>&#8594;</span>Via Settimio Severo - 57 mt da te
+          </div>
+          <div class="carica">
+            Stato carica:
+            <div class="full">
+              <div id="barra02">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- carta03 -->
+        <div class="carta_mezzo">
+          <h4><span>&#9632;</span>Monopattino VON RICKTOFEN</h4>
+          <div class="posizione">
+            <span>&#8594;</span>Via Attilio Regolo - 3,1 km da te
+          </div>
+          <div class="carica">
+            Stato carica:
+            <div class="full">
+              <div id="barra03">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- chiusura container -->
+      </div>
+      <!-- chiusura velina -->
+    </div>
+
+  </body>
+
 </html>
